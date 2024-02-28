@@ -2715,6 +2715,9 @@ section {
   .products-list .product-card img {
     width: 100%;
   }
+  .products-page .section-header {
+    padding-bottom: 5rem;
+  }
 }
 
 .products-page .section-header {
