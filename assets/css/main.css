@@ -2969,3 +2969,9 @@ section {
   border-right-style: none !important;
   border-bottom-style: none !important;
 }
+.colorBrick {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border-radius: 5px;
+}
