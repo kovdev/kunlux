@@ -702,7 +702,6 @@ section {
 .constructions .card-item .card-body {
   padding: 30px;
   min-height: 250px;
-  transition: all ease 0.3s;
   cursor: pointer;
 }
 
@@ -2954,6 +2953,10 @@ section {
   .alt-services img {
     min-width: 0 !important;
   }
+  .vakoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 1200px) {
   .carousel-item .info {
@@ -2974,4 +2977,17 @@ section {
   height: 80px;
   background-color: red;
   border-radius: 5px;
+}
+.product-page img {
+  border-radius: 5px;
+}
+
+.mainPageContainer:hover .card-body {
+  background: #c58918;
+}
+
+.mainPageContainer:hover .card-body h4,
+.mainPageContainer:hover .card-body p {
+  background: #c58918 !important;
+  color: white;
 }
