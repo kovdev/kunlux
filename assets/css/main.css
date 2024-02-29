@@ -246,9 +246,10 @@ section {
 }
 
 .header .logo img {
-  max-height: 80px;
+  max-height: 100px;
   margin-right: 6px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 15px;
 }
 
 .header .logo h1 {
@@ -302,7 +303,7 @@ section {
 
   .navbar > ul > li {
     white-space: nowrap;
-    padding: 18px 0 10px 28px;
+    padding: 40px 0 10px 28px;
     cursor: pointer;
   }
 
@@ -436,7 +437,6 @@ section {
 /* create media from 1280 to  1650*/
 @media (min-width: 1280px) and (max-width: 1650px) {
   .navbar ul {
-    padding-top: 5rem;
     flex-wrap: wrap;
     justify-content: center;
   }
