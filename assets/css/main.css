@@ -445,6 +445,9 @@ section {
   .logo img {
     max-width: 350px;
   }
+  .products-description {
+    flex-direction: column;
+  }
 }
 @media (max-width: 1279px) {
   .navbar {
@@ -2924,6 +2927,9 @@ section {
   }
   .product-page .product-card {
     padding: 2rem;
+  }
+  .gallery.flex-wrap {
+    justify-content: center;
   }
 }
 .ablakCentrumButton {
