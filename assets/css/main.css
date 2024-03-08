@@ -2933,7 +2933,7 @@ section {
   }
 }
 .ablakCentrumButton {
-  background: #7f9faf;
+  background: #36b9df;
   color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
@@ -2945,6 +2945,7 @@ section {
   width: 50vw;
   height: 200px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar ul li a span {
