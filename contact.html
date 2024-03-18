@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Kun Árnyékolástechnika</title>
+    <title>Kapcsolat</title>
     <meta itemprop="name" content="Kun Árnyékolástechnika" />
     <meta itemprop="description" content=" Árnyékba öltöztetjük otthonát" />
     <meta itemprop="image" content="https://kunlux.hu/assets/img/logo2.png" />
@@ -234,6 +234,9 @@
               </ul>
             </li>
             <li><a href="/contact.html" class="active">Kapcsolat</a></li>
+            <li>
+              <a href="/ajanlatkeres.html"><span>Ajánlatkérés</span></a>
+            </li>
 
             <!-- <li><a href="/" class="active">Kültéri árnyékolástechnika</a></li> -->
           </ul>
@@ -315,75 +318,14 @@
             <!-- End Google Maps -->
 
             <div class="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
+              <div
+                class="d-flex h-100 flex-column gap-2 justify-content-center align-items-center"
               >
-                <div class="row gy-4">
-                  <div class="col-lg-6 form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Név"
-                      required
-                    />
-                  </div>
-                  <div class="col-lg-6 form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="E-mail cím"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row gy-4">
-                  <div class="col-lg-6 form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Tárgy"
-                      required
-                    />
-                  </div>
-                  <div class="col-lg-6 form-group">
-                    <input
-                      type="phone"
-                      class="form-control"
-                      name="phone"
-                      id="phone"
-                      placeholder="Telefonszám"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    placeholder="Üzenet"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Töltés</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Üzenet elküldve. Köszönjük!</div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Üzenet Küldése</button>
-                </div>
-              </form>
+                <h4>Amennyiben szeretne árajánlatot kérni kattintson ide!</h4>
+                <a href="/ajanlatkeres.html" class="btn ajanlatkeresBtn"
+                  >Árajánlatkérés</a
+                >
+              </div>
             </div>
             <!-- End Contact Form -->
           </div>
@@ -490,9 +432,17 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
+    <div id="fullscreenBackdrop"></div>
+    <button id="prevButton"><i class="bi bi-chevron-left"></i></button>
+    <button id="nextButton"><i class="bi bi-chevron-right"></i></button>
+    <img
+      id="fullscreenImage"
+      class="fullscreen-image"
+      src=""
+      alt="Fullscreen Image"
+      style="display: none"
+    />
+    <div id="overlayText"></div>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/vendor/aos/aos.js"></script>
     <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>

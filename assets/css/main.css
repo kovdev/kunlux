@@ -2997,7 +2997,6 @@ section {
 .colorBrick {
   width: 80px;
   height: 80px;
-  background-color: red;
   border-radius: 5px;
 }
 .product-page img {
@@ -3011,5 +3010,99 @@ section {
 .mainPageContainer:hover .card-body h4,
 .mainPageContainer:hover .card-body p {
   background: #c58918 !important;
+  color: white;
+}
+.zoomable {
+  cursor: zoom-in;
+}
+.fullscreen-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: auto;
+  max-width: 90vw;
+  z-index: 9998;
+  border-radius: 14px;
+  cursor: zoom-out;
+}
+#overlayText {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+  backdrop-filter: blur(10px); /* Add backdrop filter blur */
+  -webkit-backdrop-filter: blur(10px); /* Add backdrop filter blur */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 10px; /* Add border radius */
+  z-index: 9999;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #overlayText {
+    font-size: 1rem;
+  }
+}
+
+#fullscreenBackdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Add backdrop filter blur */
+  z-index: 9997; /* Behind the fullscreen image */
+}
+#fullscreenBackdrop #overlayText {
+  position: absolute;
+  bottom: 5%;
+}
+#prevButton,
+#nextButton {
+  position: fixed;
+  opacity: 0;
+  bottom: 50%;
+  z-index: 99999;
+  width: 60px;
+  height: 60px;
+  font-weight: 800;
+  border-radius: 4px;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#prevButton {
+  left: 5%;
+}
+#nextButton {
+  right: 5%;
+}
+#prevButton:hover,
+#nextButton:hover {
+  transform: scale(1.1);
+}
+.bi-chevron-right,
+.bi-chevron-left {
+  font-size: 4rem;
+  /* add shadow */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  color: #feb900;
+}
+.ajanlatkeresBtn {
+  background: var(--color-primary);
+  color: black;
+}
+.ajanlatkeresBtn:hover {
+  background: var(--color-secondary);
   color: white;
 }

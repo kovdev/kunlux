@@ -16,7 +16,8 @@ $contact->to = $receiving_email_address;
 $contact->from_name = $_POST['name'];
 $contact->from_email = $_POST['email'];
 $contact->from_phone = $_POST['phone'];
-$contact->subject = $_POST['subject'];
+$contact->lakohely = $_POST['lakohely'];
+$contact->subject = 'Árajánlatkérés ' . $_POST['name'] . '-től';
 
 // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
 /*
@@ -30,6 +31,7 @@ $contact->subject = $_POST['subject'];
 
  $contact->add_message('<div style="font-weight: bold; padding:5px;">Ügyfél neve:</div> <div style="margin: 5px;">' . $_POST['name'] . '</div>', '');
  $contact->add_message('<div style="font-weight: bold; padding:5px;">Ügyfél Email címe:</div> <div style="margin: 5px;">' . $_POST['email'] . '</div>', '');
+ $contact->add_message('<div style="font-weight: bold; padding:5px;">Ügyfél Lakóhelye:</div> <div style="margin: 5px;">' . $_POST['lakohely'] . '</div>', '');
  $contact->add_message('<div style="font-weight: bold; padding:5px;">Ügyfél Telefonszáma:</div> <div style="margin: 5px;">' . $_POST['phone'] . '</div>', '');
  $contact->add_message('<div style="font-weight: bold; padding:5px;">Üzenet:</div><div style="margin: 5px;">' . $_POST['message'] . '</div>', '');
 
