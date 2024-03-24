@@ -305,9 +305,9 @@ document.querySelectorAll('.gallery .img a').forEach((image, index) => {
     }
   });
 });
-prevBtn?.addEventListener('click', () =>
-  navigate(-1, document.querySelectorAll('.gallery .img a'), currentIndex)
-);
+prevBtn?.addEventListener('click', () => {
+  navigate(-1, document.querySelectorAll('.gallery .img a'), currentIndex);
+});
 nextBtn?.addEventListener('click', () =>
   navigate(1, document.querySelectorAll('.gallery .img a'), currentIndex)
 );
